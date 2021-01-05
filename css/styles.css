@@ -6,9 +6,14 @@ body {
   text-align: center;
 }
 
+/* =================
+   Typography 
+   ================= */
+
 h1 {
   font-size: 2.25rem;
   font-weight: 300;
+  color: #fff;
 }
 
 /* combinator - adjacent sibling */
@@ -16,6 +21,7 @@ h1 + p {
   color: #f18119;
   font-weight: 900;
   font-size: 1.3125rem;
+  text-transform: uppercase;
 }
 
 h2 {
@@ -24,9 +30,7 @@ h2 {
 
 h2 + p {
   color: #f18119;
-  font-size: 1rem;
   font-weight: 900;
-  text-transform: uppercase;
 }
 
 .top-text {
@@ -44,3 +48,14 @@ h2 + p {
 strong {
   font-weight: 900;
 }
+
+/* =================
+   Intro section 
+   ================= */
+
+   .intro {
+     background-color: #404040;
+     background-image: url(../images/ribs.jpg);
+     padding: 0 .25em 1em;
+   }
+
