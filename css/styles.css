@@ -18,7 +18,7 @@ h1 {
   font-size: 2.25rem;
   font-weight: 300;
   color: #fff;
-  margin: 2em 0;
+  margin: 0;
 }
 
 /* combinator - adjacent sibling */
@@ -69,8 +69,6 @@ strong {
   background-size: cover;
   background-position: center;
   padding: 0 .5em 2em;
-  display: flex;
-  flex-direction: column;
 }
 
 /* =================
@@ -79,6 +77,18 @@ main-content section
 
 .main-content {
   padding: 2em 1em;
+}
+
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.container-intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 50vh;
 }
 
 /* =================
@@ -110,5 +120,9 @@ main-content section
     display: flex;
     flex-direction: column;
     justify-content: center;
+  }
+
+  .container-intro {
+    height: 100%;
   }
 }
