@@ -81,9 +81,9 @@ main-content section
 
 .intro > *,
 .main-content > * {
-    max-width: 400px;
-    margin-left: auto;
-    margin-right: auto;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* =================
@@ -107,6 +107,12 @@ input {
   margin-bottom: .75em;
   padding: .25em;
   border: 1px solid #404040;
+  transform: scale(1);
+  transition: transform 250ms;
+}
+
+input:focus {
+  transform: scale(1.1);
 }
 
 .btn {
@@ -123,11 +129,13 @@ input {
 .btn-primary {
   background: linear-gradient(to left, #ff713b, #ffa51d);
   color: white;
-  transition: color 500ms;
+  transform: scale(1);
+  transition: transform 250ms;
 }
 
-.btn-primary:hover {
-  color: black;
+.btn-primary:hover,
+.btn-primary:focus {
+  transform: scale(1.1);
 }
 
 /* =================
